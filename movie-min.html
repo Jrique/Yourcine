@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourCinema</title>
+
+    <!-- Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="static/bootstrap.min.css">
+    <link rel="stylesheet" href="static/style-min.css">
+    <link rel="shortcut icon" href="./Images/Logo/Title.jpeg" type="image/x-icon">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header btn bg-danger"><a href="home.html" class="navbar-brand text-white">Pagina Inicial</a></div>
+        </div>
+    </nav>
+        <div class="container mt-5">
+            <div>
+                <!-- Exemplo de detalhes do filme estático -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="./Images/endgame.jpg" class='thumbnail img-fluid' alt="Poster do Filme">
+                    </div>
+                    <div class="col-md-8">
+                        <h2>Vingadores: Ultimato</h2>
+                        <ul class="list-group">
+                            <li class="list-group-item"><strong>Gênero:</strong> Ação</li>
+                            <li class="list-group-item"><strong>Lançado:</strong> 2019</li>
+                            <li class="list-group-item"><strong>Classificação:</strong> PG-13</li>
+                            <li class="list-group-item"><strong>Nota IMDb:</strong> 8.4</li>
+                            <li class="list-group-item"><strong>Diretor:</strong> Anthony Russo, Joe Russo</li>
+                            <li class="list-group-item"><strong>Roteirista:</strong> Christopher Markus, Stephen McFeely, Stan Lee</li>
+                            <li class="list-group-item"><strong>Atores:</strong> Robert Downey Jr, Chris Evans, Mark Ruffalo</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="well">
+                        <h3>Resumo</h3>
+                        <p>Após os eventos devastadores de Vingadores: Guerra Infinita , o universo está em ruínas, e com a ajuda de aliados os Vingadores se reúnem para desfazer as ações de Thanos e restaurar a ordem.</p>
+                        <hr>
+                        <a style="width: 160px; height: 60px; font-size: 30px;" href="#" class="btn btn-danger">Assistir</a>
+                    </div>
+                </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/main-min.js"></script>
+    <script>
+        getMovie();
+    </script>
+</body>
+
+</html>

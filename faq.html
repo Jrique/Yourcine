@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Yourcinema</title>
+  <link rel="shortcut icon" href="./Images/Logo/Title.jpeg" type="image/x-icon">
+
+  <!-- Fonte  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+  <!-- CSS do Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link href="./static/style.css" rel="stylesheet" type="text/css" />
+  <link href="./static/faq.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="static/bootstrap.min.css">
+  <link rel="stylesheet" href="static/style-min.css">
+  <link rel="stylesheet" href="cards.css">
+  <link rel="stylesheet" href="footer.css">
+  <style>
+    .nav-item :hover {
+      margin-bottom: 10px;
+    }
+
+    #header-nav .navbar-nav .nav-item .nav-link:hover {
+      color: red;
+      text-decoration: none; /* Remove underline */
+      transition: color 0.3s ease, text-shadow 0.3s ease; /* Add transition effect */
+      text-shadow: 0 0 10px red; /* Add glowing effect */
+    }
+  </style>
+  
+</head>
+<body>
+    <!-- início da navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
+            height="24"></a>
+        <button id="nav" class="navbar-toggler" style="background-color:#8b0000" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="background-color:dark-grey;"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="movies.html">Filmes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="web-series.html">Séries</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kids</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tv.html">TV</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html">Contato</a>
+            </li>
+            <li>
+              <!-- Início do dropdown de Gêneros -->
+              <div>
+                <div class="dropdown" style="position: relative; display: inline-block; padding-top: 5px; padding-left: 15px;">
+                    <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" style="font-size:20px;">
+                        Gêneros
+                    </button>
+                    <div class="dropdown-content" style="color: white;">
+                        <a href="popular.html">Popular</a>
+                        <a href="crime.html">Crime</a>
+                        <a href="suspense.html">Suspense & Thriller</a>
+                        <a href="action.html">Ação</a>
+                        <a href="fantasy.html">Sci-Fi & Fantasia</a>
+                        <a href="documentary.html">Documentário</a>
+                        <a href="horror.html">Terror</a>
+                        <a href="drama.html">Drama</a>
+                        <a href="war.html">Guerra & Política</a>
+                        <a href="comedy.html">Comédia</a>
+                        <a href="romance.html">Romance</a>
+                        <a href="anime.html">Anime</a>
+                      </div>
+                </div>
+              </div>
+              <!-- Fim do dropdown de Gêneros -->
+            </li>
+            <div style="position: relative; display: inline-block; padding-top: 5px; padding-left: 15px;">
+              <li>
+                <button type="button" class="btn btn-light" onclick="logout()" onmouseover="this.style.color='red'" onmouseout="this.style.color='white'" style="color: white;">Logout</button>
+              </li>
+            </div>
+          </ul>
+          <form id="" class="d-flex">
+            <input class="form-control me-2" type="text" id="searchText" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-danger" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+      </nav>
+
+        <!-- fim da navbar -->
+
+      <!-- ======= Seção de Perguntas Frequentes ======= -->
+      <div class="faq-section"><h2 align="center">Perguntas Frequentes</h2>
+      <details open> 
+        <summary align="center">O que é o Yourcine?</summary>
+      <div class="faq__content">
+          <p>O Yourcine é um serviço de streaming que oferece uma ampla variedade de programas de TV premiados, filmes, animes, documentários e muito mais – em milhares de dispositivos conectados à internet.</p>
+            <p>Você pode assistir o quanto quiser, quando quiser, sem um único anúncio – tudo por um preço mensal baixo. Sempre há algo novo para descobrir, e novos programas de TV e filmes são adicionados todas as semanas!</p>
+        </div>
+      </details>
+      <br>
+      <br>
+      <details>
+        <summary align="center">Onde posso assistir?</summary>
+        <div class="faq__content">
+          <p>Assista em qualquer lugar, a qualquer hora, em um número ilimitado de dispositivos. Faça login na sua conta do Yourcine para assistir instantaneamente na web em yourcine.com a partir do seu computador pessoal ou em qualquer dispositivo conectado à internet que ofereça o aplicativo do Yourcine, incluindo TVs inteligentes, smartphones, tablets, reprodutores de mídia de streaming e consoles de jogos.
+              Você também pode baixar seus programas favoritos com o aplicativo para iOS, Android ou Windows 10. Use os downloads para assistir enquanto estiver em movimento e sem uma conexão com a internet. Leve o Yourcine com você a qualquer lugar.
+          </p>
+        </div>
+        </details>
+        <br>
+        <br>
+      <details>
+        <summary align="center">O que posso assistir no Yourcine?</summary>
+        <div class="faq__content">
+          <p>O Yourcine tem uma vasta biblioteca de longas-metragens, documentários, programas de TV, animes e muito mais. Assista o quanto quiser, quando quiser.</p>
+        </div>
+        </details>
+        <br>
+        <br>
+      <details>
+        <summary align="center">É adequado para crianças?</summary>
+        <div class="faq__content">
+          <p>A experiência infantil do Yourcine é incluída na sua assinatura para dar aos pais controle enquanto as crianças desfrutam de programas de TV e filmes apropriados para a família em seu próprio espaço.</p>
+            <p>Os perfis infantis vêm com controles parentais protegidos por PIN que permitem restringir a classificação etária do conteúdo que as crianças podem assistir e bloquear títulos específicos que você não quer que as crianças vejam.</p>
+        </div>
+        </details>
+      <br>
+      <br>
+      <details>
+        <summary align="center">Como posso entrar em contato com o suporte ao cliente do Yourcine?</summary>
+        <div class="faq__content">
+          <p>Você pode entrar em contato com o suporte ao cliente do Yourcine visitando o <a href="#"> site do Yourcine </a> e indo para a seção "Contato". Lá você encontrará informações sobre como entrar em contato com o suporte ao cliente por telefone, e-mail ou chat ao vivo.</p>
+        </div>
+        </details>
+        <br>
+        <br>
+        <details>
+        <summary align="center">O que é o recurso "Baixar" no Yourcine?</summary>
+        <div class="faq__content">
+          <p>O recurso "Baixar" no Yourcine permite que você baixe seus programas e filmes favoritos para assistir offline. Este recurso está disponível no aplicativo Streaming de Filmes para iOS, Android e Windows 10. Você pode baixar títulos específicos e assisti-los a qualquer momento, mesmo sem uma conexão com a internet.</p>
+        </div>
+        </details>
+    </div>
+
+    <footer class="footer">
+      <hr class="footer-hr">
+      <div class="footer-content">
+        <div class="footer-left">
+          <a href="home.html"><img class="footer-logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
+              height="24"></a>
+          <p class="footer-bottom-tagline">Assita a hora que quiser!</p>
+        </div>
+        <div class="footer-middle">
+          <h2 class="footer-heading">Siga-nos</h2>
+          <ul class="footer-middle-list icons">
+            <a class="footer-links" href="https://www.facebook.com/" target="_blank"><i
+                class="fab fa-facebook-f facebook" style="color:red"></i></a>
+            <a class="footer-links" href="https://twitter.com/" target="_blank"><i
+                class="fab fa-twitter twitter" style="color:red"></i></a>
+            <a class="footer-links" href="https://www.linkedin.com/" target="_blank"><i
+                class="fab fa-linkedin linkedin" style="color:red"></i></a>
+            <a class="footer-links" href="https://www.instagram.com/" target="_blank"><i
+                class="fab fa-instagram instagram" style="color:red"></i></a>
+            <a class="footer-links" href="https://github.com/" target="_blank"><i
+                class="fab fa-github github" style="color:red"></i></a>
+          </ul>
+        </div>
+        <div class="footer-middle">
+          <h2 class="footer-heading">Serviços</h2>
+          <ul class="footer-middle-list">
+            <li class="footer-middle-list-item"><a href="home.html">Explore os ultimos lançamentos</a> </li>
+            <li class="footer-middle-list-item"><a href="web-series.html">Assista Series</a> </li>
+            <li class="footer-middle-list-item"><a href="#">Em breve</a> </li>
+            <li class="footer-middle-list-item"><a href="faq.html">FAQ</a> </li>
+          </ul>
+        </div>
+       <div class="footer-middle">
+                <h2 class="footer-heading">Teste nosso app</h2>
+                <ul class="footer-middle-list icons">
+                    <a class="footer-links" href="#"><i class="fab fa-google-play" style="color:red"></i></a>
+                    <a class="footer-links" href="#"><i class="fab fa-app-store-ios" style="color:red"></i></a>
+                </ul>
+            </div>
+        <div class="footer-right">
+          <p class="footer-links">
+          <h2 class="footer-heading">Entre em contato</h2>
+          <p class="footer-bottom-tagline">Sinta-se livre para nos contatar</p>
+          <a class="footer-contact-button" href="contactus.html">Contato</a>
+          </p>
+        </div>
+      </div>
+      <hr class="footer-hr">
+      <div class="footer-copyright">
+        <p>Copyright &copy; and &reg; Since
+          <script>
+            document.write(new Date().getFullYear())
+          </script> yourcine.com
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXlX/6i6p3rPibwPEe3lxfWoKj6vFQ2xVrpGE1iwA8zFz9G8P4yfFbvMOfQ==" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+      integrity="sha384-gtEjrD/SeCtmONJnlpR7RZ9P0lb7RmSa1lA9sFv1/TykvObg5ivodomPSu9tQfIP" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
